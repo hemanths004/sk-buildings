@@ -8,7 +8,7 @@ import { propertyService } from '../services/property.service';
 import { bookingService } from '../services/booking.service';
 import type { Property } from '../types';
 import { formatCurrency } from '../utils/helpers';
-import { Calendar, IndianRupee, CreditCard, Phone } from 'lucide-react';
+import { Calendar, CreditCard, Phone } from 'lucide-react';
 import toast from 'react-hot-toast';
 import { useAuthStore } from '../store/authStore';
 

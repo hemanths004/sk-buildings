@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Facebook, Instagram, Twitter, Linkedin, Youtube, ArrowUpRight, Phone, Mail, X } from 'lucide-react';
+import { Facebook, Instagram, Twitter, Linkedin, Youtube, Phone, Mail, X } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   const location = useLocation();
