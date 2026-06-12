@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Card } from '../../components/Card';
 import { TrendingUp } from 'lucide-react';
-import { 
-  BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer
-} from 'recharts';
+
 import api from '../../services/api';
 import { formatCurrency } from '../../utils/helpers';
 import { Loading } from '../../components/Loading';

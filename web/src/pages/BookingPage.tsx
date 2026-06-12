@@ -90,7 +90,7 @@ export const BookingPage: React.FC = () => {
         numberOfPeople: numberOfPeople ? Number(numberOfPeople) : undefined,
         rentAmount: dynamicRent || property?.price,
         rentDueDate: Number(rentDueDate),
-      });
+      } as any);
 
       toast.success('Booking created successfully!');
       navigate('/dashboard');

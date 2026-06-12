@@ -149,8 +149,6 @@ export const HomePage: React.FC = () => {
           availableCount: 0,
           minPrice: propMin,
           maxPrice: propMax,
-          image: property.images?.[0],
-          location: property.location ? `${property.location.address}, ${property.location.city}` : undefined,
           createdAt: property.createdAt || '',
         });
       }

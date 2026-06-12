@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Card } from '../../components/Card';
-import { Building2, Home, CalendarCheck, Users, TrendingUp, CheckCircle, XCircle } from 'lucide-react';
-import { 
-  BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer,
-  LineChart, Line, PieChart, Pie, Cell
-} from 'recharts';
+import { Building2, Home, CheckCircle, XCircle } from 'lucide-react';
 import api from '../../services/api';
 import { Loading } from '../../components/Loading';
 
@@ -28,8 +24,7 @@ export const AdminOverview: React.FC = () => {
 
   if (isLoading) return <Loading />;
 
-  const { totals, charts } = data || {};
-  const COLORS = ['#10B981', '#F59E0B', '#EF4444', '#3B82F6'];
+  const { totals } = data || {};
 
   return (
     <div className="p-8 space-y-8">

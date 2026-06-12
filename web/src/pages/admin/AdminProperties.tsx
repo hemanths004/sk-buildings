@@ -61,7 +61,7 @@ export const AdminProperties: React.FC = () => {
         setEditingImages([...currentImages, ...urls].join(', '));
       } else {
         const currentImages = (newProperty as any).images ? (newProperty as any).images.split(',').map((u: string) => u.trim()).filter(Boolean) : [];
-        setNewProperty({ ...newProject, images: [...currentImages, ...urls].join(', ') } as any);
+        setNewProperty({ ...newProperty, images: [...currentImages, ...urls].join(', ') } as any);
       }
       
       toast.success('Images uploaded successfully!', { id: 'upload-toast' });
@@ -585,8 +585,8 @@ export const AdminProperties: React.FC = () => {
                       type="number"
                       className="input-field"
                       placeholder="e.g. 500"
-                      value={editingProperty.area || editingProperty.sizeSqFt || ''}
-                      onChange={(e) => setEditingProperty({ ...editingProperty, sizeSqFt: Number(e.target.value), area: Number(e.target.value) })}
+                      value={editingProperty.area || ''}
+                      onChange={(e) => setEditingProperty({ ...editingProperty, area: Number(e.target.value) })}
                       required
                     />
                   </div>
